@@ -1,0 +1,213 @@
+/* --- ESTILOS GENERALES Y TIPOGRAFÍA --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-color: #f4f8fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header {
+    background-color: #def7ff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #2362a1;
+}
+
+header h1 {
+    margin: 0;
+    color: #1a4979;
+}
+
+header h2 {
+    margin-top: 5px;
+    font-weight: 300;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2362a1;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #bce2f5;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2362a1;
+    color: #ffffff;
+}
+
+/* --- CONTENIDO PRINCIPAL Y SECCIONES --- */
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.titulo-principal {
+    color: #2362a1;
+    margin-top: 0;
+}
+
+.bloque-historia {
+    background-color: #ffffff;
+    border: 1px solid #d1e3f0;
+    border-left: 5px solid #2362a1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* --- GRILLA DE LA GALERÍA (TARJETAS) --- */
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #e9ecef;
+}
+
+.tarjeta h3 {
+    margin: 15px 0 10px 0;
+    color: #2362a1;
+}
+
+.boton-ver {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2362a1;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.boton-ver:hover {
+    background-color: #1a4979;
+}
+
+/* --- VISTA INDIVIDUAL DE CADA ELEMENTO --- */
+.detalle-pasaje {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+/* --- CONTENEDOR PRINCIPAL DE LAS FOTOS Y SUS TEXTOS --- */
+.galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* --- CONTENEDOR PRINCIPAL DE LAS FOTOS Y SUS TEXTOS --- */
+.galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* --- TARJETA PARA 2 ELEMENTOS POR LÍNEA --- */
+.item-galeria {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    width: calc(50% - 20px); 
+    min-width: 300px;         
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen ajustada de tamaño dentro de la tarjeta */
+.item-galeria img {
+    width: 100%;
+    height: 500px;           
+    object-fit: cover;        
+    border-radius: 6px;
+}
+
+/* Texto debajo de la foto */
+.item-galeria p {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    color: #444444;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.boton-volver:hover {
+    background-color: #5a6268;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #def7ff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 1px solid #bce2f5;
+}
