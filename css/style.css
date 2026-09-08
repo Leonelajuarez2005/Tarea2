@@ -35,13 +35,12 @@ header h2 {
     color: #333333;
 }
 
-
 nav ul {
     list-style: none;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 0.8rem;
 }
 
@@ -65,14 +64,15 @@ nav a.activo {
 }
 
 main {
-    max-width: 1100px;
-    margin: 1.5rem auto;
+    max-width: 1400px;       
+    width: 95%;               
+    margin: 1.5rem auto;    
     padding: 0 1rem;
 }
 
 .intro {
     background-color: #ffffff;
-    padding: 1.5rem;
+    padding: 1.8rem;        
     border-radius: 8px;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -80,14 +80,14 @@ main {
 
 .titulo-principal {
     color: #2362a1;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.75rem;
 }
 
 .imagen-destacada {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 480px;        
     object-fit: cover;
     border-radius: 6px;
     margin-top: 1rem;
@@ -95,25 +95,23 @@ main {
 
 .seccion-galeria h2 {
     color: #1a4979;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
     text-align: center;
 }
 
-
 .galeria-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1.8rem;              
     margin-top: 20px;
 }
-
 
 .tarjeta {
     background-color: #ffffff;
     border: 1px solid #e1e8ed;
     border-radius: 8px;
-    padding: 1.2rem;
+    padding: 1.4rem;         
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     display: flex;
@@ -121,33 +119,31 @@ main {
     justify-content: space-between;
 }
 
-
 .tarjeta img {
     width: 100%;
     height: auto;
     border-radius: 4px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .tarjeta h3 {
     margin: 0.5rem 0;
     color: #2362a1;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
 }
 
 .tarjeta p {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     color: #444444;
     text-align: left;
     margin-bottom: 1.2rem;
     flex-grow: 1;
 }
 
-
 .boton-ver {
     display: inline-block;
-    padding: 0.55rem 1rem;
+    padding: 0.6rem 1rem;
     background-color: #2362a1;
     color: #ffffff;
     text-decoration: none;
@@ -163,50 +159,49 @@ main {
     background-color: #1a4979;
 }
 
-
 .detalle-pasaje {
     background-color: #ffffff;
-    padding: 1.8rem;
+    padding: 2rem;         
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .detalle-pasaje h2 {
     color: #1a4979;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 0.75rem;
 }
 
 .detalle-pasaje h3 {
     color: #2362a1;
-    font-size: 1.2rem;
-    margin-top: 1.3rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .detalle-pasaje p {
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    font-size: 0.98rem;
 }
 
-/* Grilla de imágenes en pasajes */
 .galeria-imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.8rem;
+    margin: 1.8rem 0;
 }
 
 .item-galeria {
     background-color: #ffffff;
     border: 1px solid #e1e8ed;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
 }
 
+/* Imágenes internas */
 .item-galeria img {
     width: 100%;
     height: auto;
@@ -215,34 +210,35 @@ main {
 }
 
 .item-galeria p {
-    margin-top: 0.75rem;
-    font-size: 0.88rem;
+    margin-top: 0.85rem;
+    font-size: 0.9rem;
     color: #444444;
 }
 
 footer {
     background-color: #def7ff;
     text-align: center;
-    padding: 1.2rem 1rem;
-    margin-top: 2.5rem;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
     border-top: 1px solid #bce2f5;
     font-size: 0.9rem;
     color: #333333;
 }
 
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
 
-header h1 {
-    font-size: 1.5rem;
-}
+    nav ul {
+        flex-direction: row;      
+        justify-content: center;
+        gap: 0.4rem;
+    }
 
-nav ul {
-    flex-direction: row;      
-    justify-content: center;
-    gap: 0.4rem;             
-}
-
-nav a {
-    padding: 0.35rem 0.55rem; 
-    font-size: 0.8rem;        
+    nav a {
+        padding: 0.35rem 0.55rem;
+        font-size: 0.8rem;
+    }
 }
 
