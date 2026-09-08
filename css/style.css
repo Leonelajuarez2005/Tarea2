@@ -85,7 +85,7 @@ main {
 
 .imagen-destacada {
     width: 100%;
-    height: auto; /* Muestra la imagen de portada entera y responsive */
+    height: auto; 
     max-height: 400px;
     object-fit: cover;
     border-radius: 6px;
@@ -99,7 +99,6 @@ main {
     text-align: center;
 }
 
-/* Grilla principal responsiva */
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -107,7 +106,6 @@ main {
     margin-top: 20px;
 }
 
-/* Tarjeta adaptable */
 .tarjeta {
     background-color: #ffffff;
     border: 1px solid #e1e8ed;
@@ -120,7 +118,6 @@ main {
     justify-content: space-between; /* Empuja el botón al final de la tarjeta */
 }
 
-/* Imagen responsive y completa */
 .tarjeta img {
     width: 100%;
     height: auto; /* CLAVE: La foto se adapta y se muestra entera */
@@ -144,7 +141,6 @@ main {
     flex-grow: 1; /* Permite que el texto ocupe el espacio para empujar el botón */
 }
 
-/* Estilo del botón (reutilizado) */
 .boton-ver {
     display: inline-block;
     padding: 0.55rem 1rem;
@@ -163,7 +159,6 @@ main {
     background-color: #1a4979;
 }
 
-/* Secciones de las páginas internas */
 .detalle-pasaje {
     background-color: #ffffff;
     padding: 1.8rem;
@@ -189,7 +184,6 @@ main {
     font-size: 0.95rem;
 }
 
-/* Grilla de imágenes internas */
 .galeria-imagenes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -209,7 +203,7 @@ main {
 
 .item-galeria img {
     width: 100%;
-    height: auto; /* Las fotos internas también se adaptan enteras */
+    height: auto; 
     border-radius: 5px;
 }
 
@@ -229,7 +223,6 @@ footer {
     color: #333333;
 }
 
-/* Media Queries para teléfonos */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
